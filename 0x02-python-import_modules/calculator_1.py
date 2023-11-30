@@ -8,9 +8,8 @@ def add(x, y):
 
     Returns:
         The return value. x + y
-    """
+        """
     return (x + y)
-
 
 def sub(x, y):
     """My subtraction function
@@ -21,7 +20,7 @@ def sub(x, y):
 
     Returns:
         The return value. x - y
-    """
+        """
     return (x - y)
 
 
@@ -34,7 +33,7 @@ def mul(x, y):
 
     Returns:
         The return value. x * y
-    """
+        """
     return (x * y)
 
 
@@ -47,5 +46,5 @@ def div(x, y):
 
     Returns:
         The return value. x / y
-    """
+        """
     return int(x / y)
