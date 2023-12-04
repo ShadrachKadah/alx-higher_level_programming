@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+
 def divisible_by_2(my_list=[]):
-    result = []
-    for num in my_list:
-        result.append(num % 2 == 0)
-    return result
+    multiples = []
+    for x in range(len(my_list)):
+        if my_list[x] % 2 == 0:
+            multiples.append(True)
+        else:
+            multiples.append(False)
+    return multiples
 
