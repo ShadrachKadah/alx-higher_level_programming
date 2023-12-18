@@ -1,15 +1,21 @@
-#!/usr/bin/pythoy3
+#!/usr/bin/python3
 
-def safe_print_list(my_list=[], x=0):
-    printed_elements = 0
+def safe_print_list(my_list=[], y=0):
+    """Print y elememts of a list.
 
-    try:
-        for i in range(x):
-            print(my_list[i], end=' ')
-            printed_elements += 1
-    except IndexError:
-        pass  # Handles the case where index is out of range
+    Args:
+        my_list (list): The list to print elements from.
+        y (int): The number of elements of my_list to print.
 
-    print()  # Prints a new line after all elements
-
-    return (printed_elements)
+    Returns:
+        The number of elements printed.
+    """
+    ret = 0
+    for i in range(y):
+        try:
+            print("{}".format(my_list[i]), end="")
+            ret += 1
+        except IndexError:
+            break
+    print("")
+    return (ret)
